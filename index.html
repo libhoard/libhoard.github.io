@@ -35,6 +35,9 @@
             <a class="nav-link" href="https://github.com/emeryberger/Hoard">Download</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="#press">Press</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="#licensing">Licensing</a>
           </li>
           <li class="nav-item">
@@ -78,32 +81,32 @@
 		  </a>
 		</td>
 		
-		<td valign="center">
+		<td id="technical" valign="center">
 		  Hoard is a fast, scalable, and memory-efficient memory allocator that can speed up your applications. It&#8217;s <strong>much faster than built-in system allocators</strong>: as much as 2.5x faster than Linux, 3x faster than Windows, and 7x faster than Mac. No source code changes necessary. <b>Cross-platform: </b>works on Linux, Mac OS X, and Windows. <b><a href="https://github.com/emeryberger/Hoard">Download Hoard now!</a></b>
 		</td>
 	      </tr>
 	      
 	      <tr>
 		<td colspan="2">
-		  <p id="download" />
 
-		  <b>Download:</b> Hoard can be downloaded directly
-		  from <a href="https://github.com/emeryberger/Hoard">the Hoard GitHub repository</a>.
-		  
-		  <p id="technical"/>
+		    <p>
+		      <b>Download:</b> Hoard can be downloaded directly
+		      from <a href="https://github.com/emeryberger/Hoard">the Hoard GitHub repository</a>.
+		    </p>
 
-		  <b>Technical information:</b> the original Hoard
-		  algorithm is
-		  described <a href="https://people.cs.umass.edu/~emery/pubs/berger-asplos2000.pdf">in
-		  this technical paper</a>; that version also inspired improvements made to the <a href="https://opensource.apple.com/source/libmalloc/libmalloc-116.50.8/src/magazine_malloc.c.auto.html">Mac OS X memory allocator</a>. However, the modern version of Hoard has evolved
-		  considerably since its initial release, and today's Hoard
-		  is <em>much</em> faster.
-	  
+		    <p>
+		      <b>Technical information:</b> the original Hoard
+		      algorithm is
+		      described <a href="https://people.cs.umass.edu/~emery/pubs/berger-asplos2000.pdf">in
+			this technical paper</a>; that version also inspired improvements made to the <a href="https://opensource.apple.com/source/libmalloc/libmalloc-116.50.8/src/magazine_malloc.c.auto.html">Mac OS X memory allocator</a>. However, the modern version of Hoard has evolved
+		      considerably since its initial release, and today's Hoard
+		      is <em>much</em> faster.
+		    </p>
 		  
 		</td>
 	      </tr>
 
-	      <tr id="licensing">
+	      <tr>
 		<td valign="center" colspan="2">
 		  <center>
 		    <img src="logos-small.png" alt="[Hoard: Commercial Users]" sizes="(max-width: 562px) 100vw, 562px" data-recalc-dims="1" />
@@ -113,7 +116,7 @@
 	      </tr>
 	      
 	      <tr>
-		<td colspan="2">
+		<td id="press" colspan="2">
 		  <p />
 		  
                   <b>Users:</b> Hoard licensees include Fortune 100 companies like
@@ -123,6 +126,77 @@
 		  Canada, and Crédit Suisse.
 
 		  <p />
+		  
+		  <b>Press:</b>
+
+		  <table>
+		    <tr>
+		      <td valign="top">
+			<table>
+			  <tr>
+			    <td>
+			      <blockquote>
+				<p>
+				  &#8220;Hoard <strong>dramatically improves program performance</strong> through its more efficient use of memory&#8230;and low synchronization costs.&#8221;</p>
+				<div>
+				  <strong style="color:#58A623;">Lin &amp; Snyder</strong><span> - Principles of Parallel Programming (Addison-Wesley)</span>
+				</div>
+			      </blockquote>
+			    </td>
+			  </tr>
+			</table>
+		      </td>
+		      <td valign="top">
+			<table>
+			  <tr>
+			    <td>
+			      <blockquote>
+				<p>
+				  &#8220;&#8230;use Emery Berger&#8217;s excellent <strong>Hoard</strong> multiprocessor memory management code&#8230; it <strong>is very fast on multiprocessor machines</strong>.&#8221;
+				</p>
+				<div>
+				  <strong style="color:#58A623;">John Robbins</strong><span> - Debugging Applications for Microsoft .NET &amp; Microsoft Windows (Microsoft Press)</span>
+				</div>
+			      </blockquote>
+			    </td>
+			  </tr>
+			</table>
+		      </td>
+		      <td valign="top">
+			<table>
+			  <tr>
+			    <td>
+			      <blockquote>
+				<p>&#8220;<strong>To improve memory management performance</strong> (with multiple threads), consider an open source alternative such as Hoard&#8230;&#8221;
+				</p>
+				<div>
+				  <strong style="color:#58A623;">Johnson Hart</strong><span> - Windows System Programming (Addison-Wesley)</span>
+				</div>
+			      </blockquote>
+			    </td>
+			  </tr>
+			</table>
+		      </td>
+		      <td valign="top">
+			<table>
+			  <tr>
+			    <td>
+			      <blockquote>
+				<p>
+				  &#8220;&#8230; Hoard is <strong>especially efficient in multiprocessor environments</strong>.&#8221;
+				</p>
+				<div><strong style="color:#58A623;">William von Hagen</strong><span> - The Definitive Guide to GCC</span>
+				</div>
+			      </blockquote>
+			    </td>
+			  </tr>
+			</table>
+		      </td>
+		    </tr>
+		  </table>
+
+		  
+		  <a id="licensing" />
 		  
 		  <b>Licensing:</b> Hoard can be used for
 		  non-commercial use without a license under the terms
