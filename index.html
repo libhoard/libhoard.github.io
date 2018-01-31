@@ -36,6 +36,9 @@
             <a class="nav-link" href="https://github.com/emeryberger/Hoard">Download</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="#users">Users</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="#press">Press</a>
           </li>
           <li class="nav-item">
@@ -49,109 +52,138 @@
     </nav>
 
     <main role="main">
-      <div class="container">
-      <div class="page-header">
-	<div class="panel panel-info">
-	  <div class="panel-heading">
-	    <center>
-	      <table width="80%">
-		<tr>
-		  <td>
+      <div class="jumbotron blackened">
+	<div class="container">
+	  <center>
+	    <table class="table-fit table-sm" width="90%">
+	      <tr>
+		<td>
+		  <div class="blackened">
+		    <a class="logo" href="https://www.hoard.org" rel="home">
+		      <img src="wp-content/uploads/2013/10/Hoard_Reversed.png">
+		    </a>
 		    <p />
-		    <div class="blackened">
-		      <a class="logo" href="https://www.hoard.org" rel="home">
-			<img src="wp-content/uploads/2013/10/Hoard_Reversed.png">
-		      </a>
-		      <p />
-		    </div>
-		  </td>
-		</tr>
-	      </table>
-	    </center>
-	  </div>
+		  </div>
+		</td>
+	      </tr>
+	    </table>
+	  </center>
 	</div>
       </div>
-      <div class="row">
+
+      <div class="container">
+	<div class="row">
 	<center>
-	  <table class="table-fit table-sm" width="80%">
+	  <table class="table-fit table-sm" width="90%">
 	    <tbody>
 	      <tr>
 		
 		<td valign="center">
-		  <a href="download-hoard">
-		    <img class="alignleft" style="margin-left: 10px; margin-right: 10px;" src="no-speed-limit-outlined.png" height="109" width="98" alt="[Hoard: No Speed Limit]" data-recalc-dims="1" />
-		  </a>
+
+		  <div class="card mb-12">
+<!--		    <div class="card-header">
+			<div class="blackened">
+			  <a class="logo" href="https://www.hoard.org" rel="home">
+			    <img src="wp-content/uploads/2013/10/Hoard_Reversed.png">
+			  </a>
+			</div>
+-->
+		      <div class="card-body">
+		      <table>
+			<tr>
+			  <td>
+			    <a href="#download">
+			      <img class="alignleft" style="margin-left: 10px; margin-right: 10px;" src="no-speed-limit-outlined.png" height="109" width="98" alt="[Hoard: No Speed Limit]" data-recalc-dims="1" />
+			    </a>
+			  </td>
+			  <td valign="center">
+			    Hoard is a fast, scalable, and memory-efficient memory allocator that can speed up your applications. It&#8217;s <strong>much faster than built-in system allocators</strong>: as much as 2.5x faster than Linux, 3x faster than Windows, and 7x faster than Mac. No source code changes necessary. <b>Cross-platform: </b>works on Linux, Mac OS X, and Windows. <b><a href="https://github.com/emeryberger/Hoard">Download Hoard now!</a></b>
+			  </td>
+			</tr>
+		      </table>
+		    </div>
+		  </div>
 		</td>
 		
-		<td valign="center">
-		  Hoard is a fast, scalable, and memory-efficient memory allocator that can speed up your applications. It&#8217;s <strong>much faster than built-in system allocators</strong>: as much as 2.5x faster than Linux, 3x faster than Windows, and 7x faster than Mac. No source code changes necessary. <b>Cross-platform: </b>works on Linux, Mac OS X, and Windows. <b><a href="https://github.com/emeryberger/Hoard">Download Hoard now!</a></b>
+      
+	      <tr>
+		<td colspan="2" valign="top">
+
+		    <div class="card mb-12">
+		      <div class="card-header">
+			<h4 class="my-0 font-weight-normal">Download</h4>
+		      </div>
+		      <div class="card-body">
+			Hoard can be downloaded directly
+			from <a href="https://github.com/emeryberger/Hoard">the Hoard GitHub repository</a>.
+
+		      </div>
+		    </div>
 		</td>
 	      </tr>
-	      
+
+
+	  <table class="table-fit table-sm" width="90%">
 	      <tr>
 		<td colspan="2">
 
-		    <p>
-		      <b>Download:</b> Hoard can be downloaded directly
-		      from <a href="https://github.com/emeryberger/Hoard">the Hoard GitHub repository</a>.
-		    </p>
+		    <div class="card mb-12">
+		      <div class="card-header">
+			<h4 id="users" class="my-0 font-weight-normal">
+			  Users
+			</h4>
+		      </div>
+		      <div class="card-body">
+			Hoard users include Fortune 100 companies like
+			Cisco Systems, high performance analytics companies
+			like TIBCO, and major international companies like
+			SAP, Tata, British Telecom, the Royal Bank of
+			Canada, and Crédit Suisse.
 
-		    <p id="technical">
-		      <b>Technical information:</b> the original Hoard
-		      algorithm is
-		      described <a href="https://people.cs.umass.edu/~emery/pubs/berger-asplos2000.pdf">in
-			this technical paper</a>; that version also inspired improvements made to the <a href="https://opensource.apple.com/source/libmalloc/libmalloc-116.50.8/src/magazine_malloc.c.auto.html">Mac OS X memory allocator</a>. However, the modern version of Hoard has evolved
-		      considerably since its initial release, and today's Hoard
-		      is <em>much</em> faster.
-		    </p>
-		  
-		</td>
-	      </tr>
-
-	      <tr>
-		<td valign="center" colspan="2">
-		  <center>
-		    <img src="logos-small.png" alt="[Hoard: Commercial Users]" sizes="(max-width: 562px) 100vw, 562px" data-recalc-dims="1" />
-		    <p />
-		  </center>
-		</td>
-	      </tr>
-	      
-	      <tr>
-		<td colspan="2">
-		  <p />
-		  
-                  <b>Users:</b> Hoard licensees include Fortune 100 companies like
-		  Cisco Systems, high performance analytics companies
-		  like TIBCO, and major international companies like
-		  SAP, Tata, British Telecom, the Royal Bank of
-		  Canada, and Crédit Suisse.
-
-		  <p id="press"/>
-		  
-		  <b>Press:</b>
-
-		  <table>
-		    <tr>
-		      <td valign="top">
+			<center>
 			<table>
 			  <tr>
-			    <td>
-			      <blockquote>
-				<p>
-				  &#8220;Hoard <strong>dramatically improves program performance</strong> through its more efficient use of memory&#8230;and low synchronization costs.&#8221;</p>
+			    <td valign="center" colspan="2">
+			      <center>
+				<img src="logos-small.png" alt="[Hoard: Commercial Users]" sizes="(max-width: 562px) 100vw, 562px" data-recalc-dims="1" />
+				<p />
+			      </center>
+			    </td>
+			  </tr>
+			</table>
+			</center>
+
+		      </div>
+		    </div>
+
+		</td>
+	      </tr>
+	  </table>
+	  
+	  <table class="table-fit table-sm" width="90%">
+	    <tr>
+	      <td>
+		<div class="card mb-12">
+		  <div class="card-header">
+		    <h4 id="press" class="my-0 font-weight-normal">
+		      Press
+		    </h4>
+		  </div>
+		  <div class="card-body">
+		    
+		    <div class="container">
+		      <div class="row">
+			<div class="col-md-3">
+			  <blockquote>
+			    <p>
+				&#8220;Hoard <strong>dramatically improves program performance</strong> through its more efficient use of memory&#8230;and low synchronization costs.&#8221;
+				</p>
 				<div>
 				  <strong style="color:#58A623;">Lin &amp; Snyder</strong><span> - Principles of Parallel Programming (Addison-Wesley)</span>
 				</div>
 			      </blockquote>
-			    </td>
-			  </tr>
-			</table>
-		      </td>
-		      <td valign="top">
-			<table>
-			  <tr>
-			    <td>
+			    </div>
+			    <div class="col-md-3">
 			      <blockquote>
 				<p>
 				  &#8220;&#8230;use Emery Berger&#8217;s excellent <strong>Hoard</strong> multiprocessor memory management code&#8230; it <strong>is very fast on multiprocessor machines</strong>.&#8221;
@@ -160,14 +192,8 @@
 				  <strong style="color:#58A623;">John Robbins</strong><span> - Debugging Applications for Microsoft .NET &amp; Microsoft Windows (Microsoft Press)</span>
 				</div>
 			      </blockquote>
-			    </td>
-			  </tr>
-			</table>
-		      </td>
-		      <td valign="top">
-			<table>
-			  <tr>
-			    <td>
+			    </div>
+			    <div class="col-md-3">
 			      <blockquote>
 				<p>&#8220;<strong>To improve memory management performance</strong> (with multiple threads), consider an open source alternative such as Hoard&#8230;&#8221;
 				</p>
@@ -175,14 +201,8 @@
 				  <strong style="color:#58A623;">Johnson Hart</strong><span> - Windows System Programming (Addison-Wesley)</span>
 				</div>
 			      </blockquote>
-			    </td>
-			  </tr>
-			</table>
-		      </td>
-		      <td valign="top">
-			<table>
-			  <tr>
-			    <td>
+			    </div>
+			    <div class="col-md-3">
 			      <blockquote>
 				<p>
 				  &#8220;&#8230; Hoard is <strong>especially efficient in multiprocessor environments</strong>.&#8221;
@@ -190,30 +210,64 @@
 				<div><strong style="color:#58A623;">William von Hagen</strong><span> - The Definitive Guide to GCC</span>
 				</div>
 			      </blockquote>
-			    </td>
-			  </tr>
-			</table>
-		      </td>
-		    </tr>
-		  </table>
+			    </div>
+			  </div>
+			</div>
+		      </div>
+		    </div>
+	      </td>
+	    </tr>
+	  </table>
 
-		  
-		  <a id="licensing">
-		  
-		  <b>Licensing:</b> Hoard can be used for
-		  non-commercial use under the terms
-		  of the GNU Public License. It can also be licensed
-		  for commercial use; please
-		  contact <a href="mailto:jjain@otc.utexas.edu?subject=Hoard%20licensing">Jitendra
-		  Jain</a> 
-		  (<a href="mailto:jjain@otc.utexas.edu?subject=Hoard%20licensing">jjain@otc.utexas.edu</a>)
-		  for licensing information.
-
-		  </a>
+	  <table class="table-fit table-sm" width="90%">
+	    <tr>
+	      <td>
+		    <div class="card mb-12">
+		      <div class="card-header">
+			<h4 id="licensing" class="my-0 font-weight-normal">
+			  Licensing
+			</h4>
+		      </div>
+		      <div class="card-body">
+			Hoard can be used for
+			non-commercial use under the terms
+			of the GNU Public License. It can also be licensed
+			for commercial use; please
+			contact <a href="mailto:jjain@otc.utexas.edu?subject=Hoard%20licensing">Jitendra
+			  Jain</a> 
+			(<a href="mailto:jjain@otc.utexas.edu?subject=Hoard%20licensing">jjain@otc.utexas.edu</a>)
+			for licensing information.
+		      </div>
+		    </div>
 		  
 		</td>
 	      </tr>
-
+	      </table>
+	      
+	  <table class="table-fit table-sm" width="90%">
+	      <tr>
+		<td colspan="2" valign="top">
+		    <div class="card mb-12">
+		      <div class="card-header">
+			<h4 class="my-0 font-weight-normal">
+			  <a id="technical">
+			    Technical information
+			  </a>
+			</h4>
+		      </div>
+		      <div class="card-body">
+			The original Hoard
+			algorithm is
+			described <a href="https://people.cs.umass.edu/~emery/pubs/berger-asplos2000.pdf">in
+			  this technical paper</a>; that version also inspired improvements made to the <a href="https://opensource.apple.com/source/libmalloc/libmalloc-116.50.8/src/magazine_malloc.c.auto.html">Mac OS X memory allocator</a>. However, the modern version of Hoard has evolved
+			considerably since its initial release, and today's Hoard
+			is <em>much</em> faster.
+		      </div>
+		    </div>
+		  
+		</td>
+	      </tr>
+	      
 	    </tbody>
 	  </table>
 	</center>
@@ -221,7 +275,7 @@
       <div class="page-footer">
         <div class="copyright text-muted">
 	  <center>
-	    <table width="80%">
+	    <table width="90%">
 	      <tr>
 		<td>
 		  <font size="-1">
